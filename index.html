@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" 
+  content="IE=edge">
+  <meta name="viewport" 
+  content="width=device-width, initial-scale=1.0">
+  <title>Document
+
+  </title>
+</head>
+<body>
+<button onclick="myFunction()">Try it
+</button>
+
+
+<div id="vienas">
+
+</div>
+
+  <label for="fruits3">Choose a fruit:
+
+  </label>
+  <select id="fruits" 
+  name="Fruits">
+    <option id="v1" 
+    value="46">obolis
+
+    </option>
+    <option id="v2" 
+    value="5">kriause
+
+    </option>
+    <option id="v3" 
+    value="6">braske
+
+    </option>
+    <option id="v4" 
+    value="11">banana
+
+    </option>
+    <option id="v5" 
+    value="22">vinoge
+
+    </option>
+  </select>
+<input id="vv1"
+ type="number">
+  <input type="button" 
+  onclick="myFunctionOne()"
+  
+  value="Submit">
+</form>
+
+
+
+<div id="du">
+
+</div>
+
+
+<div id="tris">
+
+</div>
+
+  <script>
+
+
+function myFunctionOne() {
+  var x = document.getElementById("fruits")
+  .selectedIndex;
+
+  var y = document.getElementById("fruits")
+  .options;
+
+  var value1 = document.getElementById("vv1")
+  .value;
+  document.getElementById("du")
+  .innerHTML =" is viso kiekis " + 
+  value1 + " ,prieke yra " + 
+  y[x].text + " ir kaina " + 
+  y[x].value*value1 + " euro ";
+}
+
+
+
+
+
+
+var obolis = [];
+obolis[0] = "obolai";
+obolis[1] = 23;
+
+
+var kriause = [];
+kriause[0] = "kriause";
+kriause[1] = 22;
+
+var braske = [];
+braske[0] = "braske";
+braske[1] = 11;
+
+
+var banana = [];
+banana[0] = "banana";
+banana[1] = 5;
+
+
+var vinoge = [];
+vinoge[0] = "vinoge";
+vinoge[1] = 4;
+
+var suma
+
+suma =
+obolis[1] +
+kriause[1] +
+braske[1] +
+banana[1] + 
+vinoge[1] ;
+
+
+document.getElementById("vienas")
+.innerHTML =
+
+obolis[0] + " kuris kainuje " + 
+obolis[1] + " ir " + 
+kriause[0] + " kuri kainuje " + 
+kriause[1] + " ir " + 
+braske[0] + " kuri kainuje " + 
+braske[1] + " ir " + 
+banana[0] + " kuri kainuje " + 
+banana[1] + " ir " + 
+vinoge[0] + " kuri kainuje " + 
+vinoge[1] + " ir ju bendra kaina yra " + 
+suma;
+
+function myFunction() {
+  alert("megstu programuoti! Yey :)");
+}
+
+
+
+var obolis1 = [];
+obolis1[0] = "obolai";
+obolis1[1] = 23;
+obolis1[2] = "rouduona";
+
+var kriause1 = [];
+kriause1[0] = "kriause";
+kriause1[1] = 22;
+kriause1[2] = "zalia";
+
+var braske1 = [];
+braske1[0] = "braske";
+braske1[1] = 11;
+braske1[2] = "geltona";
+
+var banana1 = [];
+banana1[0] = "banana";
+banana1[1] = 5;
+banana1[2] = "ruzova";
+
+var vinoge1 = [];
+vinoge1[0] = "vinoge";
+vinoge1[1] = 4;
+vinoge1[2] = "balta";
+
+
+
+// Iterate over fruits below
+
+// Normal way
+obolis1.forEach(function(fruit){
+  document.getElementById("tris")
+  .innerHTML=('I want to eat a '
+   + fruit)
+});
+
+</script>
+</body>
+</html>
